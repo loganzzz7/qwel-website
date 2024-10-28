@@ -1,0 +1,201 @@
+/* overall */
+
+html {
+    scroll-padding-top: 200px;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url('images/hellokittyheart.jpg');
+    background-attachment: fixed;
+    background-size: 5rem;
+    color: rgba(0, 0, 0, 0.997);
+    overflow-x: hidden;
+}
+
+body p {
+    line-height: 1.15;
+}
+
+a {
+    /* very dark grey */
+    color: rgba(0, 0, 0, 0.997);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.997);
+}
+
+::selection {
+    background: #E70D63;
+}
+
+/* header bar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: auto;
+    background-color: #E70D63;
+    /* very light black */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.547);
+    /* border-bottom: 2px solid #CE203C; */
+}
+
+/* headerBar */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    padding: 1rem 0rem;
+}
+
+#SurpriseLogo {
+    height: 8rem;
+    width: 8rem;    
+}
+
+/* main */
+main {
+    padding-top: 220px;
+    padding-bottom: 2rem;
+}
+
+/* qwel txt */
+#qwelNight {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    gap: 2rem;
+}
+
+.qwelNightDesc {
+    border: 3px solid #E70D63;
+    border-radius: 0.5rem;
+    background-color: #FACFE4;
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.qwelNightHeading {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* qwel img */
+.qwelPictures {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.coolImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid #E70D63;
+    border-radius: 0.5rem;
+    transition: 0.5s all ease-in-out;
+}
+
+.coolImage:hover {
+    transform: scale(1.15);
+}
+
+.qwelImageContainer {
+    /* width: 100%;
+    height: 100%; */
+    max-width: 18rem;
+    max-height: 18rem;
+}
+
+/* modal */
+/* https://www.w3schools.com/howto/howto_css_modals.asp */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.closeBtn {
+    color: rgba(0, 0, 0, 0.997);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+  
+.closeBtn:hover,
+.closeBtn:focus {
+    /* dark grey */
+    color: #E70D63;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.qwelModalContent {
+    background-color: #FACFE4;
+    margin: 1.5rem auto;
+    padding: 20px;
+    border: 1px solid #E70D63;
+    width: 30rem;
+}
+
+#qwelPlaceHolderImg {
+    width: 30rem;
+    height: 40rem;
+    border-radius: 0.3rem;
+}
+
+.leftBtn {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 1rem;
+    color: rgba(0, 0, 0, 0.997);
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 1rem;
+    background-color: #FACFE4;
+}
+
+.rightBtn {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    right: 1rem;
+    color: rgba(0, 0, 0, 0.997);
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 1rem;
+    background-color: #FACFE4;
+}
+
+.leftBtn:hover,
+.rightBtn:hover {
+    /* dark grey */
+    color: #CE203C;
+    text-decoration: none;
+    cursor: pointer;
+}
