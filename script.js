@@ -1,54 +1,54 @@
-// pirate pic modal
-let pirateCurrentIndex = 0;
-let pirateModal = document.getElementById("pirateModal");
-let piratePlaceHolderImg = document.getElementById("piratePlaceHolderImg");
-let strawHatPicture = document.querySelectorAll(".pirateImage");
+// qwel pic modal
+let qwelCurrentIndex = 0;
+let qwelModal = document.getElementById("qwelModal");
+let qwelPlaceHolderImg = document.getElementById("qwelPlaceHolderImg");
+let qwelPicture = document.querySelectorAll(".qwelImage");
 
-// pirate modal left right btn
-let leftBtnPirate = document.getElementById("leftBtnPirate");
-let rightBtnPirate = document.getElementById("rightBtnPirate");
+// qwel modal left right btn
+let leftBtn = document.getElementById("leftBtn");
+let rightBtn = document.getElementById("rightBtn");
 
 const images = [
-    'https://media.geeksforgeeks.org/wp-content/uploads/20230306120634/unnamed.jpg',
-    'https://media.geeksforgeeks.org/wp-content/uploads/20230306120634/unnamed.jpg',
-    'https://media.geeksforgeeks.org/wp-content/uploads/20230306120634/unnamed.jpg'
+    'images/dinner.png',
+    'images/freakbob.png',
+    'images/heidicartman.png'
     ];
 
-strawHatPicture.forEach(function (image, index) {
+qwelPicture.forEach(function (image, index) {
     image.addEventListener("click", function () {
-        pirateCurrentIndex = index;
-        pirateModal.style.display = "block";
-        piratePlaceHolderImg.src = strawHatPicture[pirateCurrentIndex].src;
+        qwelCurrentIndex = index;
+        qwelModal.style.display = "block";
+        qwelPlaceHolderImg.src = images[qwelCurrentIndex];
 
-        document.getElementsByClassName("closeBtnPirate")[0].onclick = function () {
-            pirateModal.style.display = "none";
+        document.getElementsByClassName("closeBtn")[0].onclick = function () {
+            qwelModal.style.display = "none";
         };
 
         window.onclick = function (event) {
-            if (event.target == pirateModal) {
-                pirateModal.style.display = "none";
+            if (event.target == qwelModal) {
+                qwelModal.style.display = "none";
             }
         }
     })
 });
 
-leftBtnPirate.addEventListener("click", function() {
-    if (pirateCurrentIndex > 0) {
-        pirateCurrentIndex--;
-        piratePlaceHolderImg.src = strawHatPicture[pirateCurrentIndex].src;
+leftBtn.addEventListener("click", function() {
+    if (qwelCurrentIndex > 0) {
+        qwelCurrentIndex--;
+        qwelPlaceHolderImg.src = images[qwelCurrentIndex];
     } else {
-        pirateCurrentIndex = strawHatPicture.length -2;
-        piratePlaceHolderImg.src = strawHatPicture[pirateCurrentIndex].src;
+        qwelCurrentIndex = images.length - 1;
+        qwelPlaceHolderImg.src = images[qwelCurrentIndex];
     }
 });
 
 
-rightBtnPirate.addEventListener("click", function() {
-    if (pirateCurrentIndex < strawHatPicture.length -2) {
-        pirateCurrentIndex++;
-        piratePlaceHolderImg.src = strawHatPicture[pirateCurrentIndex].src;
+rightBtn.addEventListener("click", function() {
+    if (qwelCurrentIndex < images.length - 1) {
+        qwelCurrentIndex++;
+        qwelPlaceHolderImg.src = images[qwelCurrentIndex];
     } else {
-        pirateCurrentIndex = 0;
-        piratePlaceHolderImg.src = strawHatPicture[pirateCurrentIndex].src;
+        qwelCurrentIndex = 0;
+        qwelPlaceHolderImg.src = images[qwelCurrentIndex];
     }
 });
