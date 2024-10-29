@@ -2,7 +2,7 @@
 let qwelCurrentIndex = 0;
 let qwelModal = document.getElementById("qwelModal");
 let qwelPlaceHolderImg = document.getElementById("qwelPlaceHolderImg");
-let qwelPicture = document.querySelectorAll(".qwelImage");
+let qwelPicture = document.querySelectorAll(".coolImage");
 
 // qwel modal left right btn
 let leftBtn = document.getElementById("leftBtn");
