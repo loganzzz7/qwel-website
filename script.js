@@ -67,7 +67,7 @@ moveCat.addEventListener('mouseover', () => {
     // msg update lol
     const boredMsg = document.querySelector(".qwelTxt");
     if (count > 0 && count <= 5) {
-        boredMsg.innerHTML = "Yoo, isn't this kinda fun. You should keep trying to catch the cat";
+        boredMsg.innerHTML = "Yoo, isn't this kinda fun. You should keep trying to catch the cat.";
         boredMsg.style.fontSize = "medium";
         moveCat.style.width = "6rem";
         moveCat.style.height = "6rem";
@@ -77,7 +77,7 @@ moveCat.addEventListener('mouseover', () => {
         moveCat.style.width = "5rem";
         moveCat.style.height = "5rem";
     } else if (count > 10 && count <= 20) {
-        boredMsg.innerHTML = "Almostttttt.";
+        boredMsg.innerHTML = "Almostttttt!";
         boredMsg.style.fontSize = "x-large";
         moveCat.style.width = "4rem";
         moveCat.style.height = "4rem";
