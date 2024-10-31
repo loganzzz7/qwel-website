@@ -132,7 +132,7 @@ main {
 .modal {
     display: none;
     position: fixed;
-    z-index: 20;
+    z-index: 100;
     left: 0;
     top: 0;
     width: 100%; 
@@ -221,5 +221,5 @@ main {
     left: 45%;
     width: 7rem;
     height: 7rem;
-    z-index: 1000;
+    z-index: 10;
 }
