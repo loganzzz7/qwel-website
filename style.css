@@ -5,7 +5,7 @@
 } */
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url('images/hellokittyheart.jpg');
     background-attachment: fixed;
     background-size: 5rem;
@@ -19,7 +19,7 @@ body p {
 
 a {
     /* very dark grey */
-    color: rgba(0, 0, 0, 0.997);
+    color: #E70D63;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -58,14 +58,14 @@ header {
 }
 
 #SurpriseLogo {
-    height: 8rem;
-    width: 8rem;    
+    height: 7rem;
+    width: 9rem;    
 }
 
 /* main */
 main {
-    padding-top: 200px;
-    padding-bottom: 2rem;
+    padding-top: 170px;
+    /* padding-bottom: 2rem; */
 }
 
 /* qwel txt */
@@ -91,6 +91,12 @@ main {
     text-transform: uppercase;
     font-weight: bold;
     font-size: large;
+}
+
+.qwelTxt {
+    font-size: small;
+    color: #1664C0;
+    font-weight: bold;
 }
 
 /* qwel img */
@@ -206,4 +212,14 @@ main {
     color: #CE203C;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* move cat */
+#movecat {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 7rem;
+    height: 7rem;
+    z-index: 1000;
 }
